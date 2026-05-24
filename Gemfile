@@ -8,8 +8,10 @@ gem "rails", "~> 7.1.2"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
-# Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
+# # Use sqlite3 as the database for Active Record
+# group :development, :test do
+#   gem "sqlite3", "~> 1.4"
+# end
 
 # Use postgresql as the database for Active Record and for Render website
 gem "pg"
