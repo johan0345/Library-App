@@ -7,7 +7,7 @@ class UserController < ApplicationController
       current_user.save!
       redirect_to root_path, notice: '2FA disabled successfully!'
     else
-      redirect_back(fallback_location: root_path) , alert: 'Invalid OTP code.'
+      redirect_back fallback_location: root_path, alert: 'Invalid OTP code.'
     end
   end
 
